@@ -16,6 +16,7 @@ footer {
     border-radius: 10px 10px 0 0;
     font-weight: bold;
     margin-top: 5px;
+    width: 100%;
 }
 
 footer p {

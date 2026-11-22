@@ -1,6 +1,7 @@
 
 <template>
     <footer>
+        <p>Contact: wadgroupbe@gmail.com</p>
         <p>© 2026 WAD GroupBE. All rights reserved.</p>
     </footer>
 </template>
@@ -14,10 +15,11 @@ footer {
     margin-top: 0;
     border-radius: 10px 10px 0 0;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 footer p {
-    margin: 0;
+    margin: 5px 0;
     font-weight: bold;
 }
 </style>

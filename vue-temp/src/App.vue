@@ -8,3 +8,9 @@ import Footer from './components/Footer.vue'
     <RouterView />
     <Footer />
 </template>
+
+<style>
+.app {
+    min-height: 100vh;
+}
+</style>

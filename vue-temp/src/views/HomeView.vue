@@ -11,44 +11,61 @@ function resetAllLikes() {
 
 <template>
   <main class="container">
-    <aside class="sidebar"></aside>
+    <section class="content">
+      <aside class="sidebar"></aside>
 
-    <section class="posts">
+      <section class="posts">
       
-    <Post
-      v-for="post in store.state.posts"
-      :key="post.id"
-      :postId="post.id"
-    />
+      <Post
+        v-for="post in store.state.posts"
+        :key="post.id"
+        :postId="post.id"
+      />
 
-    <button @click="resetAllLikes">Reset Likes</button>
+      </section>
+
+      <aside class="sidebar"></aside>
 
     </section>
 
-    <aside class="sidebar"></aside>
+    <button @click="resetAllLikes" class="like-reset">Reset likes</button>
+
   </main>
 </template>
 
 <style scoped>
 .container {
     display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
 }
 
 .sidebar {
     background-color: lightgray;
-    width: 20%;
+    width: 18%;
     border-radius: 10px;
     min-height: 200px;
 }
 
 .posts {
-    width: 55%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    width: 55%;
+    gap: 10px;
+}
+
+.like-reset {
+  width: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgb(70, 122, 218);
 }
 </style>
 

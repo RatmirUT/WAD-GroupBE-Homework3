@@ -18,7 +18,6 @@ onMounted(() => {
 onUnmounted(() => {
     document.removeEventListener('click', closeMenu)
 })
-
 </script>
 
 <template>
@@ -27,11 +26,10 @@ onUnmounted(() => {
             <div class="nav-links">
                 <RouterLink to="/">Home</RouterLink>
                 <span class="divider">|</span>
-                <RouterLink to="/addPost">addPost</RouterLink>
-                <span class="divider">|</span>
                 <RouterLink to="/signup">Signup</RouterLink>
             </div>
 
+            <!--
             <div class="profile-container" @click.stop>
                 <img src="/images/profile.jpg" alt="Profile" class="profile-pic" @click="toggleMenu">
 
@@ -41,6 +39,7 @@ onUnmounted(() => {
                 <a href="#" class="logout-link">logout</a>
                 </div>
             </div>
+            -->
 
         </nav>
     </header>
@@ -49,14 +48,15 @@ onUnmounted(() => {
 <style scoped>
 .site-header {
     background-color: #a6a6a6;
-    padding: 5px 10px;
+    padding: 10px 20px;
     box-sizing: border-box;
     border-radius: 0 0 10px 10px;
+    margin-bottom: 8px;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -70,6 +70,7 @@ nav a:hover {
     background-color: lightgray;
 }
 
+/*
 .profile-pic {
     width: 40px;
     height: 40px;
@@ -77,15 +78,15 @@ nav a:hover {
     border-radius: 50%;
 }
 
-.divider {
-    margin: 0 5px;
-    font-weight: bold;
-}
-
-
 .profile-container {
     position: relative;
     display: inline-block;
+}
+*/
+
+.divider {
+    margin: 0 5px;
+    font-weight: bold;
 }
 
 .dropdown-menu {

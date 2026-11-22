@@ -69,6 +69,7 @@ function formatDate(date) {
     color: black;
     padding: 15px;
     border-radius: 10px;
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     gap: 10px;
